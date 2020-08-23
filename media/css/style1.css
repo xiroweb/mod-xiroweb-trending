@@ -1,0 +1,25 @@
+.mod-trending-style1 {
+
+}
+.mod-trending-style1 span {
+    background: #F5F5F5;
+    border-radius: 6px;
+    margin: 2px 4px 2px 0;
+    padding: 3px 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+.mod-trending-style1 span a {
+
+}
+
+.mod-trending-style1 .itembox {
+    padding: 10px 0;
+    border-bottom: 1px solid #d4d4d4;
+}
+.mod-trending-style1 .imageboxleft {
+    padding-right: 10px !important;
+}
+.mod-trending-style1 .imageboxright {
+    padding-left: 10px !important;
+}
