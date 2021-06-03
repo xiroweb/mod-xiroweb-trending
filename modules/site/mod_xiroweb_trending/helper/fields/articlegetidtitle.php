@@ -193,7 +193,7 @@ class JFormFieldArticlegetidtitle extends JFormField
 					'width'       => '800px',
 					'bodyHeight'  => '70',
 					'modalWidth'  => '80',
-					'footer'      => '<button type="button" class="btn" data-dismiss="modal">' . JText::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</button>',
+					'xiroweb_trendingter'      => '<button type="button" class="btn" data-dismiss="modal">' . JText::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</button>',
 				)
 			);
 		}
@@ -214,7 +214,7 @@ class JFormFieldArticlegetidtitle extends JFormField
 					'width'       => '800px',
 					'bodyHeight'  => '70',
 					'modalWidth'  => '80',
-					'footer'      => '<button type="button" class="btn"'
+					'xiroweb_trendingter'      => '<button type="button" class="btn"'
 							. ' onclick="window.processModalEdit(this, \'' . $this->id . '\', \'add\', \'article\', \'cancel\', \'item-form\'); return false;">'
 							. JText::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</button>'
 							. '<button type="button" class="btn btn-primary"'
@@ -243,7 +243,7 @@ class JFormFieldArticlegetidtitle extends JFormField
 					'width'       => '800px',
 					'bodyHeight'  => '70',
 					'modalWidth'  => '80',
-					'footer'      => '<button type="button" class="btn"'
+					'xiroweb_trendingter'      => '<button type="button" class="btn"'
 							. ' onclick="window.processModalEdit(this, \'' . $this->id . '\', \'edit\', \'article\', \'cancel\', \'item-form\'); return false;">'
 							. JText::_('JLIB_HTML_BEHAVIOR_CLOSE') . '</button>'
 							. '<button type="button" class="btn btn-primary"'
