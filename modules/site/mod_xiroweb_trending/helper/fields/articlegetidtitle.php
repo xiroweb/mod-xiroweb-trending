@@ -70,7 +70,7 @@ class JFormFieldArticlegetidtitle extends JFormField
 			{
 				JFactory::getDocument()->addScriptDeclaration("
 				function jSelectArticle_" . $this->id . "(id, title, catid, object, url, language) {
-					window.processModalSelect('Article', '" . $this->id . "', id, title, catid, object, url, language);
+					window.processModalSelectgetidtitle('Article', '" . $this->id . "', id, title, catid, object, url, language);
 				}
 				");
 

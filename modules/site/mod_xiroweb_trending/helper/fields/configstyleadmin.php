@@ -46,49 +46,7 @@ class JFormFieldConfigstyleadmin extends JFormField {
 					margin-left: 0;
 				}
 	
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(3),
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(4),
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(5),
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(6)
-				 {
-					display: block;
-						
-				}
-
-				@media (min-width: 768px) {
-					#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(3),
-					#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(4),
-					#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(5),
-					#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(6)
-					 {
-						display: inline-block;
-						width: 20%;
-						padding: 10px;
-							
-					}
-				}
-
-				.clearfix {}
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(6) {
-					*zoom: 1;
-				}
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(6):before,
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(6):after {
-					display: table;
-					content: "";
-					line-height: 0;
-				}
-				#general > div[class*="row"] > div:nth-of-type(1) > div.control-group:nth-of-type(6):after {
-					clear: both;
-				}
-				.subform-repeatable-group {
-					box-shadow: 0 6px 6px rgb(0 0 0 / 7%), 0 6px 6px rgb(0 0 0 / 16%);
-					border-radius: 12px;
-					padding: 10px;
-					background: #f0f0f0;
-					margin-bottom: 20px;
-					margin-top: 20px;
-				}
+			
 
 				#general > div[class*="row"] > div:nth-of-type(1)  input[type="number"] {
 				    font-size: 20px;
@@ -100,7 +58,9 @@ class JFormFieldConfigstyleadmin extends JFormField {
 				#general > div[class*="row"] > div:nth-of-type(1) .chzn-container-single .chzn-single {
 					border: 2px solid #2196f3;
 				}
-				#general > div[class*="row"] > div:nth-of-type(1) .chzn-container .chzn-drop {
+				#general > div[class*="row"] > div:nth-of-type(1) .chzn-container .chzn-drop,
+				#general > div[class*="row"] > div:nth-of-type(1) .chzn-container-multi .chzn-choices
+				 {
 					border: 2px solid #2196f3;
 				}
 				#general > div[class*="row"] > div:nth-of-type(1) .chzn-container .chzn-results {
@@ -123,7 +83,9 @@ class JFormFieldConfigstyleadmin extends JFormField {
 				#general > div[class*="row"] > div:nth-of-type(1)  input[type="search"],
 				#general > div[class*="row"] > div:nth-of-type(1)  input[type="tel"],
 				#general > div[class*="row"] > div:nth-of-type(1)  input[type="color"],
-				#general > div[class*="row"] > div:nth-of-type(1)  .uneditable-input {
+				#general > div[class*="row"] > div:nth-of-type(1)  .uneditable-input,
+				#general > div[class*="row"] > div:nth-of-type(1)  .chzn-container-multi .chzn-choices
+				 {
 					box-shadow: 0 6px 6px rgb(0 0 0 / 7%), 0 6px 6px rgb(0 0 0 / 16%);
 					background: #FFFFFF;
 				}

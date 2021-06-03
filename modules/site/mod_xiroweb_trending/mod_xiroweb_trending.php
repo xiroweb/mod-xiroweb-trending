@@ -38,12 +38,7 @@ if (!empty($list))
 	$article_grouping_direction = $params->get('article_grouping_direction', 'ksort');
 	$moduleclass_sfx            = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 	$item_heading               = $params->get('item_heading');
-	$stylecss					= $params->get('stylecss', 'none');
 
-	JHtml::_('stylesheet', 'mod_xiroweb_trending/'.'bs4-grid.css', array('version' => 'auto', 'relative' => true));
-	if	($stylecss != 'none') {
-		JHtml::_('stylesheet', 'mod_xiroweb_trending/'.$stylecss.'.css', array('version' => 'auto', 'relative' => true));
-	}
 
 	require JModuleHelper::getLayoutPath('mod_xiroweb_trending', $params->get('layout', 'default'));
 }

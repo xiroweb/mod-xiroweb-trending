@@ -8,6 +8,14 @@
  */
 
 defined('_JEXEC') or die;
+
+	$stylecss					= $params->get('stylecss', 'none');
+
+	JHtml::_('stylesheet', 'mod_xiroweb_trending/'.'bs4-grid.css', array('version' => 'auto', 'relative' => true));
+	if	($stylecss != 'none') {
+		JHtml::_('stylesheet', 'mod_xiroweb_trending/'.$stylecss.'.css', array('version' => 'auto', 'relative' => true));
+	}
+	
 ?>
 
 <div class="module<?php echo $moduleclass_sfx; ?> mod-trending-<?php echo $stylecss; ?>">

@@ -80,14 +80,14 @@ class mod_xiroweb_trendingInstallerScript
 			.intro-header {
 				text-align : center;
 				padding    : 60px 60px;
-				background-color: rgba(28,206,234,0.82);
-			    background: linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%);
+				background-color: #85FFBD;
+				background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
 			}
 
 			.intro-header-title {
 				font-weight   : normal;
-				color         : rgb(255, 255, 255);
+				color         : #000000;
 			}
 
 			.intro-header-title small {
@@ -267,7 +267,7 @@ class mod_xiroweb_trendingInstallerScript
 					<div class="row-fluid">
 					<div class="span12">
 						<h1 class="intro-header-title">
-							<?php echo Text::_('MOD_XIROWEB_MULTI_CUSTOM'); ?>
+							<?php echo Text::_('MOD_XIROWEB_TRENDING'); ?>
 						</h1>
 						</div>
 					</div>
@@ -279,7 +279,7 @@ class mod_xiroweb_trendingInstallerScript
 					<div class="template-intro-container">
 						<div class="row-fluid">
 							<div class="intro-quote lead">
-								<?php echo Text::_('MOD_XIROWEB_MULTI_CUSTOM_INSTALL_DESC'); ?>
+								<?php echo Text::_('MOD_XIROWEB_TRENDING_INSTALL_DESC'); ?>
 							</div>
 						</div>
 						<div class="row-fluid">
@@ -291,12 +291,12 @@ class mod_xiroweb_trendingInstallerScript
 				</section>
 			</div>
 			<div class="intro-footer">
-				<h3 class="text-center"><?php echo Text::_('MOD_XIROWEB_MULTI_CUSTOM_INSTALL_DESC2'); ?></h3>
+				<h3 class="text-center"><?php echo Text::_('MOD_XIROWEB_TRENDING_INSTALL_DESC2'); ?></h3>
 				<ul class="version-history">
-					<li class="text-center"><?php echo Text::_('MOD_XIROWEB_MULTI_CUSTOM_INSTALL_DESC2'); ?></li>
+					<li class="text-center"><?php echo Text::_('MOD_XIROWEB_TRENDING_INSTALL_DESC3'); ?></li>
 				</ul>
 				<div class="template-intro-container">
-					<a class="btn btn-success btn-large" target="_blank" href="https://www.xiroweb.com/app/xiroweb-van-ban-nhieu-cot"><?php echo Text::_('MOD_XIROWEB_MULTI_CUSTOM'); ?></a>
+					<a class="btn btn-success btn-large" target="_blank" href="https://www.xiroweb.com/app/xiroweb-module-tin-trending"><?php echo Text::_('MOD_XIROWEB_TRENDING'); ?></a>
 				</div>
 			</div>
 		</div>
