@@ -73,11 +73,6 @@ switch ($tileanh) {
 				<?php endif; ?>
 				</div>
 
-				<?php if ($params->get('show_introtext')) : ?>
-					<p class="box-item-introtext">
-						<?php echo $item->displayIntrotext; ?>
-					</p>
-				<?php endif; ?>
 
 				<?php if ($params->get('show_readmore')) : ?>
 					<p class="box-item-readmore">
