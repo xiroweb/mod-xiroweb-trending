@@ -6,17 +6,3 @@
     display: inline-block;
     border-radius: 6px;
 }
-.mod-trending-default .bs4row > * {
-    margin-bottom: 5px;
-}
-.mod-trending-default .itembox {
-    margin: 5px;
-    padding: 10px;
-}
-
-.mod-trending-default .imageboxleft {
-    padding-right: 10px !important;
-}
-.mod-trending-default .imageboxright {
-    padding-left: 10px !important;
-}

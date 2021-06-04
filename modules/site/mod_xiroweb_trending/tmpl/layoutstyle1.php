@@ -14,11 +14,11 @@ use Joomla\CMS\HTML\HTMLHelper;
 $image_position = $params->get('imgageposition', '1');
 
 HTMLHelper::_('stylesheet', 'mod_xiroweb_trending/bootstrap5-grid.css', array('version' => 'auto', 'relative' => true));
-HTMLHelper::_('stylesheet', 'mod_xiroweb_trending/default.css', array('version' => 'auto', 'relative' => true));
+HTMLHelper::_('stylesheet', 'mod_xiroweb_trending/style1.css', array('version' => 'auto', 'relative' => true));
 
 ?>
 
-<div class="module<?php echo $moduleclass_sfx; ?> mod-trending-default">
+<div class="module<?php echo $moduleclass_sfx; ?> mod-trending-style1">
 	<?php foreach ($list as  $key => $item) : ?>
 				<?php $images = json_decode($item->images);
 

@@ -13,20 +13,20 @@ $tileanh = $params->get('tileanh', '33');
 
 switch ($tileanh) {
 	case '33':
-		$col_img = 'bs4col-4';
-		$col_title = 'bs4col-8';
+		$col_img = 'bs5col-4';
+		$col_title = 'bs5col-8';
 		break;
 	case '40':
-		$col_img = 'bs4col-5';
-		$col_title = 'bs4col-7';
+		$col_img = 'bs5col-5';
+		$col_title = 'bs5col-7';
 		break;
 	case '25':
-		$col_img = 'bs4col-3';
-		$col_title = 'bs4col-9';
+		$col_img = 'bs5col-3';
+		$col_title = 'bs5col-9';
 		break;
 	case '20':
-		$col_img = 'bs4col-2';
-		$col_title = 'bs4col-10';
+		$col_img = 'bs5col-2';
+		$col_title = 'bs5col-10';
 		break;
 	
 	default:
@@ -35,9 +35,9 @@ switch ($tileanh) {
 }
 ?>
 	<div class="itembox">
-		<div class="bs4row no-gutters bs4align-items-start">
+		<div class="bs5row g-3 mb-3 align-items-start align-content-between">
 
-			<div class="bs4-col-12">
+			<div class="bs5-col-12">
 					<<?php echo $params->get('title_heading', 'h1'); ?>>
 						<a class="box-item-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
 					</<?php echo $params->get('title_heading', 'h1'); ?>>
@@ -73,11 +73,6 @@ switch ($tileanh) {
 				<?php endif; ?>
 				</div>
 
-				<?php if ($params->get('show_introtext')) : ?>
-					<p class="box-item-introtext">
-						<?php echo $item->displayIntrotext; ?>
-					</p>
-				<?php endif; ?>
 
 				<?php if ($params->get('show_readmore')) : ?>
 					<p class="box-item-readmore">
