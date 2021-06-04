@@ -152,23 +152,39 @@
         </field>
 
         <field
-          name="layout"
-          type="modulelayout"
-          label="MOD_XIROWEB_TRENDING_FIELD_SELECT_LAYOUT"
-          class="custom-select"
-          labelclass="theme-select"
-        />
+          name="imgageposition"
+          type="list"
+          label="MOD_XIROWEB_TRENDING_FIELD_IMAGE_POSITION_LABEL"
+          description="MOD_XIROWEB_TRENDING_FIELD_IMAGE_POSITION_DESC"
+          default="33"
+          validate="options"
+          >
+          <option value="1">MOD_XIROWEB_TRENDING_FIELD_IMAGE_POSITION_OPTION_LEFT</option>
+          <option value="2">MOD_XIROWEB_TRENDING_FIELD_IMAGE_POSITION_OPTION_RIGHT</option>
+          <option value="0">MOD_XIROWEB_TRENDING_FIELD_IMAGE_POSITION_OPTION_NONE</option>
+        </field>
+
         <field
           name="layoutdemodefaut"
           type="layoutdemo"
           background="anhbentrai.png"
-          showon="layout:_:default"
+          showon="imgageposition:1"
         />
         <field
           name="layoutdemolayoutright"
           type="layoutdemo"
           background="anhbenphai.png"
-          showon="layout:_:layoutright"
+          showon="imgageposition:2"
+        />
+
+        <field
+          name="layout"
+          type="modulelayout"
+          label="MOD_XIROWEB_TRENDING_FIELD_SELECT_LAYOUT"
+          class="custom-select"
+          labelclass="theme-select"
+          default="_:default"
+          validate="moduleLayout"
         />
         
         <field name="title_heading" 
@@ -207,19 +223,8 @@
         <field 
           name="tinnhatnote3" 
           type="note" 
-          label="MOD_XIROWEB_TRENDING_FIELD_NOTE_TINNHATNOTE3"/>
-        <field
-          name="stylecss"
-          type="list"
-          label="MOD_XIROWEB_TRENDING_FIELD_STYLECSS_LABEL"
-          description="MOD_XIROWEB_TRENDING_FIELD_STYLECSS_DESC"
-          default="style1"
-          >
-          <option value="none">MOD_XIROWEB_TRENDING_FIELD_STYLECSS_OPTION_NONE</option>
-          <option value="default">MOD_XIROWEB_TRENDING_FIELD_STYLECSS_OPTION_DEFAULT</option>
-          <option value="style1">MOD_XIROWEB_TRENDING_FIELD_STYLECSS_OPTION_STYLE1</option>
-          <option value="style2">MOD_XIROWEB_TRENDING_FIELD_STYLECSS_OPTION_STYLE2</option>
-        </field>
+          label="MOD_XIROWEB_TRENDING_FIELD_NOTE_TINNHATNOTE3" />
+
         <field 
           name="tinnhatnote2" 
           type="note" 

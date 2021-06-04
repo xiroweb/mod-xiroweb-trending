@@ -12,6 +12,7 @@ defined('_JEXEC') or die('Restricted access');
 
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Filesystem\File;
 
 class mod_xiroweb_trendingInstallerScript
 {
@@ -27,6 +28,18 @@ class mod_xiroweb_trendingInstallerScript
 
 			return false;
 		}
+
+		$mod_path = JPATH_SITE.'/modules/mod_xiroweb_trending/tmpl/';
+
+		$this->delfile($mod_path . 'layoutright.php');
+		$this->delfile($mod_path . 'noneimage.php');
+	}
+
+	protected function delfile($path) {
+		if (File::exists($path)) {
+			File::delete($path);
+		}
+		return;
 	}
 
 	public function postflight($type, $parent)
